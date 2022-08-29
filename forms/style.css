@@ -10,15 +10,42 @@ html {
 body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
+  -ms-grid-columns: 2fr 3fr;
+      grid-template-columns: 2fr 3fr;
   margin: 0;
-  height: 600px;
   background-color: #f5f6f8;
 }
 
 h1, h2 {
   margin-top: 0;
+}
+
+label, input {
+  display: block;
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+input {
+  padding: 6px;
+  border-radius: 4px;
+  border: solid #E5E7EB 1px;
+}
+
+input:focus {
+  outline: none;
+  border: solid #0055c4 1px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+input.error {
+  border-color: red;
 }
 
 aside {
@@ -52,30 +79,27 @@ aside > section > img {
 
 aside > footer {
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   text-align: center;
   width: 100%;
+  font-size: 0.75rem;
 }
 
 button {
   background-color: #596D48;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   color: white;
-  padding: 10px 20px;
+  padding: 14px 30px;
   border-radius: 8px;
   border: none;
   font-weight: bold;
 }
 
-input {
-  border-color: #E5E7EB;
-}
-
-input:focus {
-  border: blue;
-}
-
-input.error {
-  border-color: red;
+a {
+  color: #596D48;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 article {
@@ -102,21 +126,16 @@ article > section {
 
 section.form {
   background-color: white;
-  -webkit-box-shadow: 0px 6px 4px #E5E7EB;
-          box-shadow: 0px 6px 4px #E5E7EB;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 form {
   display: -ms-grid;
   display: grid;
+  max-width: 500px;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 20px 40px;
-}
-
-form label {
-  font-size: 0.75rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
+  gap: 20px;
 }
 /*# sourceMappingURL=style.css.map */
