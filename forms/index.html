@@ -10,20 +10,20 @@
 <body>
     <aside>
         <section>
-            <img src="" alt="">
+            <img src="img/odin.png" alt="">
             <span>ODIN</span>
         </section>
-        <footer>Photo by </footer>
+        <footer>Photo by Halie West on Unsplash</footer>
     </aside>
     <main>
         <article>
-            <section>
+            <section class="form-leader">
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
                 <p>You <em>know</em> you want to.</p>
             </section>
-            <section>
+            <section class="form">
                 <h1>Let's do this!</h1>
-                <form action="">
+                <form action="" id="sign-up-form">
                     <div class="form-element">
                         <label for="first-name">FIRST NAME</label>
                         <input type="text" id="first-name">
@@ -34,11 +34,11 @@
                     </div>
                     <div class="form-element">
                         <label for="email">EMAIL</label>
-                        <input type="text" id="email">
+                        <input type="email" id="email">
                     </div>
                     <div class="form-element">
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input type="text" id="phone-number">
+                        <input type="tel" id="phone-number">
                     </div>
                     <div class="form-element">
                         <label for="password">PASSWORD</label>
@@ -51,7 +51,7 @@
                 </form>
             </section>
             <section>
-                <button>Create Account</button>
+                <button type="submit" form="sign-up-form">Create Account</button>
                 <p>Already have an account? <a href="">Log in</a></p>
             </section>
         </article>
